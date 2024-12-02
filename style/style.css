@@ -10,6 +10,7 @@
   background-image: url(../images/cow.jpg);
   background-position: center;
   /*background-size: cover;*/
+  clip-path: polygon(0 0, 100% 0, 99% 64%, 49% 100%, 45% 100%, 0 63%);
 }
 .hero h1{
   color:green;
@@ -21,20 +22,20 @@
   word-spacing: 40px;
   letter-spacing: 20px;
 }
-.article #cow-type{
+.article{
   width: 80%;
   /*margin-left: auto;
   margin-right: auto;
   margin-top: 60px;
   margin-bottom: 60px;*/
   margin: 60px auto;
-  background-color: rgb(6, 187, 187);
+  background:linear-gradient(45deg, blue,green);
   border-width: 15px;
   border-color: yellow;
   border-style: solid;
   padding: 60px;
 }
-.article h2{
+.article h2, .cow-type h2 {
   text-align: center;
   font-size: 48px;
   border-bottom:2px;
@@ -53,4 +54,20 @@
 }
 .article p .imp{
   font-size: 2em;
+}
+
+.cow-images{
+  display: flex;
+  gap: 20px;
+}
+
+.cow-images div{
+  width: 300px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+img{
+  width: 100%;
+  align-items: center;
 }
